@@ -1,0 +1,61 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Microsoft JhengHei;
+}
+a{
+	text-decoration: none;
+}
+h2{
+	padding-top: 2px;
+	text-align: center;
+}
+#header{
+	background-color: #333;
+	line-height: 2.5em;
+	width: 100%;
+	text-align: center;
+}
+.h_text{
+	color: #eee;
+	margin: 2px;
+	font-size: 20px;
+}
+.h_text:hover{
+	color: #00FF00;
+	font-size: 25px;
+}
+.container{
+	background-color: #eed;
+	margin: 50px auto;
+	width: 80%;
+	height:1300px;
+	border-radius: 10px;
+}
+.varline{
+	background-color: #eee;
+	padding: 1px;
+	margin: 3px;
+	line-height: 20%;
+}
+#way , #Demo ,#element{
+	margin: 15px;
+	color: #696969;
+	font-size: 18px;
+	text-align: left;
+}
+ol,ul,dd{
+	margin-left: 15px;
+	margin-top:0;
+	margin-bottom:10px;
+}
+hr{
+	line-height:  5px;
+}
+#listintro{
+	font-size: 18px;
+}
+#footer{
+	text-align: center;
+	color: #00AA00;
+}
