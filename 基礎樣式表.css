@@ -29,7 +29,6 @@ h2{
 	background-color: #eed;
 	margin: 50px auto;
 	width: 80%;
-	height:1300px;
 	border-radius: 10px;
 }
 .varline{
@@ -38,7 +37,7 @@ h2{
 	margin: 3px;
 	line-height: 20%;
 }
-#way , #Demo ,#element{
+#intro , #way , #Demo ,#element{
 	margin: 15px;
 	color: #696969;
 	font-size: 18px;
