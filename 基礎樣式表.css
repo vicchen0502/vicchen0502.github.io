@@ -22,7 +22,7 @@ h2{
 	font-size: 20px;
 }
 .h_text:hover{
-	color: #00FF00;
+	color: #317F2F;
 	font-size: 25px;
 }
 .container{
@@ -56,5 +56,5 @@ hr{
 }
 #footer{
 	text-align: center;
-	color: #00AA00;
+	color: #317F2F;
 }
