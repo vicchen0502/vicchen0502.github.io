@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS 介紹</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href=" ../基礎樣式表.css"/>
+	<style type="text/css">
+	#boxmodel{
+		background-color: #347F28;
+		color: white;
+		text-align: center;
+		padding: 20px 20px 20px 20px;
+		border-style: solid;
+		border-width: 5px;
+		border-color: black;
+		margin: 20px 20% 2em 20%;
+	}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<a href="#intro" class="h_text">CSS簡介</a>
+		<span class="varline"> </span>
+		<a href="#way" class="h_text">選擇器</a>
+		<span class="varline"> </span>
+		<a href="#Demo" class="h_text">常用屬性</a>
+		<span class="varline"> </span>
+		<a href="#element" class="h_text">盒狀模型</a>
+		<span class="varline"> </span>
+		<a href="../demo/index.html" class="h_text" target="_blank">練習的DEMO</a>
+	</div>
+	<div class="container">
+		<div id="intro">
+			<h2>CSS簡介</h2>
+			學會了純文字的HTML後，是否還是覺得網頁有些呆版、和其他網頁比起來差很多呢？要裝飾一個網頁的外觀最簡單的就是CSS(Cascading Style Sheets)了。至於常聽到的Bootstrap等都是CSS的模組，要有一定的CSS基礎上手才會比較快。<br/>
+			<h3><dt>CSS的三種樣子</dt></h3>
+				<dd>
+					<ol start="1"> 
+						<li>行間 CSS：在標籤內加上style屬性，並把CSS的屬性及值打在""內</li>
+						<li>head 裡的 CSS：在head標籤下層加入style標籤，並把CSS的屬性及值打在{}內</li>
+						<li>外部 CSS ：在外部設定CSS檔案(格式參照Head裡的CSS)，再加入link標籤至head標籤下層引入</li>
+					</ol>
+					<h4>EXAMPLE</h4>
+					<img src="pic01.JPG" width="85%" height="85%" alt="CSS種類">
+
+				</dd>
+
+			<hr/>
+		</div>
+		<div id="way">
+			<h2>常見的CSS選擇器</h2><br/>
+			 <table border="1">
+			 	<tr>
+			 		<th>選擇器</th>
+			 		<th>範例</th>
+			 		<th>說明</th>
+			 	</tr>
+			 	<tr>
+			 		<td> .class </td>
+			 		<td> .blablabla </td>
+			 		<td> class選擇器，一個class可以對應到多個標籤 </td>
+			 	</tr>
+			 	<tr>
+			 		<td> #id </td>
+			 		<td> #blablabla </td>
+			 		<td> id選擇器，一個id只能對應一個標籤 </td>
+			 	</tr>
+			 	<tr>
+			 		<td> tag </td>
+			 		<td> tag </td>
+			 		<td> 標籤選擇器，套用到所有的tag標籤 </td>
+			 	</tr>
+			 	<tr>
+			 		<td> * </td>
+			 		<td> * </td>
+			 		<td>套用在整個網頁所有標籤</td>
+			 	</tr>
+			 </table>
+			 當然還有其他很多其他啊哩阿雜的選擇器，不過最常用就屬於這幾個，對於其他有興趣者，再來找網管我借書看。
+			 <br/>
+			 <br/>
+			<hr/>
+		</div>
+		<div id="Demo">
+			<h2>常用屬性</h2>
+			<table border="1">
+				<tr>
+					<th>屬性</th>
+					<th>說明</th>
+				</tr>
+				<tr>
+					<th colspan="2">文字相關</th>
+				</tr>
+				<tr>
+					<td>font-size</td>
+					<td>字體大小，需加入<a href="#pixal" style="color:#006400;">單位</a></td>
+				</tr>
+				<tr>
+					<td>font-family</td>
+					<td>字形，如：標楷體、微軟正黑體...等</td>
+				</tr>
+				<tr>
+					<td>color</td>
+					<td>字體顏色，可用簡單顏色單字或參考<a href="https://color.adobe.com/zh/create/color-wheel/" target="_blank" style="color:#006400;">色碼表</a>的HEX(前面加#)</td>
+				</tr>
+				<tr>
+					<td>line-height</td>
+					<td>指定行距</td>
+				</tr>
+				<tr>
+					<td>text-decoration</td>
+					<td>是否加入底線 (值：underline 加底線/none 不加)</td>
+				</tr>
+				<tr>
+					<td>text-align</td>
+					<td>水平對齊方式 (值：left 靠左/right 靠右/center 置中/ justify 左右對齊 <--不清楚的話開WORD試試看就知道了)</td>
+				</tr>
+				<tr>
+					<td>text-shadow</td>
+					<td>建立立體字</td>
+				</tr>
+				<tr>
+					<th colspan="2">背景相關</th>
+				</tr>
+				<tr>
+					<td>background-color</td>
+					<td>背景顏色，可用簡單顏色單字或參考<a href="https://color.adobe.com/zh/create/color-wheel/" target="_blank" style="color:#006400;">色碼表</a>的HEX(前面加#)</td>
+				</tr>
+				<tr>
+					<td>background-image</td>
+					<td>背景圖片，後用url(圖片位址)指定圖片 ( ex:background-image:url(/pic/123.JPG); )</td>
+				</tr>
+				<tr>
+					<td>background-repeat</td>
+					<td>背景圖片是否重複 (值：no-repeat 不重複/ repeat-x 水平方向重複/ repaet-y 垂直方向重複)</td>
+				</tr>
+				<tr>
+					<td>background-attachment</td>
+					<td>是否在螢幕上固定(值：fixed 固定/scroll 背景圖隨網頁捲動)</td>
+				</tr>
+				<tr>
+					<td>background-position</td>
+					<td>背景圖片位置(值：top/center/buttum 三選一加 left/center/right 三選一 或<br/>
+					兩個數字/百分比，第一個距網頁最上面、第二距最左)</td>
+				</tr>
+				<tr>
+					<td>box-shadow</td>
+					<td>建立3D效果</td>
+				</tr>
+			</table>
+			<br/>
+		<hr/>
+		</div>
+		<div id="element">
+			<h2>盒狀模型</h2>
+			<div id="boxmodel">
+				盒狀模型試作
+			</div>
+			除border外，其他屬性沒辦法設定顏色！！！要設定margin的顏色，要在上層的盒子中設定background-color。
+			<table border="1">
+				<tr>
+					<th>屬性</th>
+					<th>值</th>
+				</tr>
+				<tr>
+					<th colspan="2">填充(padding)</th>
+				</tr>
+				<tr>
+					<td>padding-top/-bottom/-right/-left</td>
+					<td>上下左右的留白距離(文字到邊線的距離)<br/>若無指定-top/-bottom/-right/-left，padding後依序輸入上右下左的距離值，值可為auto(自動)</td>
+				</tr>
+				<tr>
+					<th colspan="2">框線(border)</th>
+				</tr>
+				<tr>
+					<td>border-color</td>
+					<td>框線顏色，可用簡單顏色單字或參考<a href="https://color.adobe.com/zh/create/color-wheel/" target="_blank" style="color:#006400;">色碼表</td>
+				</tr>
+				<tr>
+					<td>border-style</td>
+					<td>框線樣式(值：none 無/dotted 點/dash -/solid 實心/double 兩條...)</td>
+				</tr>
+				<tr>
+					<td>boder-width(可指定，如：border-top-width...)</td>
+					<td>可為thin 細/think 粗/medium 中等 或其他單位</td>
+				</tr>
+				<tr>
+					<td>border-radius</td>
+					<td>圓角方框</td>
+				</tr>
+				<tr>
+					<th colspan="2">邊界(margin)</th>
+				</tr>
+				<tr>
+					<td>margin-top/-bottom/-right/-left</td>
+					<td>上下左右的邊界距離(邊線到其他物件的距離)<br/>若無指定-top/-bottom/-right/-left，padding後依序輸入上右下左的距離值，值可為auto(自動)</td>
+				</tr>
+
+			</table>
+			<h3>單位</h3>
+			<table id="pixal" border="1">
+				<tr>
+					<th>單位</th>
+					<th>說明</th>
+				</tr>
+				<tr>
+					<td>px</td>
+					<td>pixals，螢幕上的像點大</td>
+				</tr>
+				<tr>
+					<td>em</td>
+					<td>目前字體大小大</td>
+				</tr>
+				<tr>
+					<td>ex</td>
+					<td>目前字體1/2高度</td>
+				</tr>
+				<tr>
+					<td>%</td>
+					<td>百分比</td>
+				</tr>
+				<tr>
+					<td>in</td>
+					<td>吋</td>
+				</tr>
+				<tr>
+					<td>cm</td>
+					<td>公分</td>
+				</tr>
+				<tr>
+					<td>mm</td>
+					<td>毫米</td>
+				</tr>
+				<tr>
+					<td>pt</td>
+					<td>point，1pt=1/72in</td>
+				</tr>
+				<tr>
+					<td>pc</td>
+					<td>1pc=12pt</td>
+				</tr>
+			</table>
+			<br/>
+		</div>
+	</div>
+	<div id="footer">
+		<h5>&copy;SSInRC | Made&Design by 26th網管 一線</h5>
+	</div>
+
+</body>
+<!--this website is made and designed by 一線 and owned by SSInRC-->
+</html>
